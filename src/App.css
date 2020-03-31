@@ -1,0 +1,148 @@
+/* -------------------------------- VARIABLES ------------------------------- */
+:root {
+    /* Primary */
+    --cyan:hsl(180, 66%, 49%);
+    --dark-violet:hsl(257, 27%, 26%);
+    
+    /* Secondary */
+    --red:hsl(0, 87%, 67%);
+  
+    /* Neutral */
+    --gray: hsl(0, 0%, 75%);
+    --grayish-violet:hsl(257, 7%, 63%);
+    --very-dark-blue:hsl(255, 11%, 22%);
+    --very-dark-violet:hsl(260, 8%, 14%);
+  }
+
+/* ------------------------------ BASIC STYLING ----------------------------- */
+body {
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    color: var(--grayish-violet);
+    overflow-x: hidden;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    font-weight: lighter;
+  }
+  
+  img {
+    display: block;
+    width: 100%;
+  }
+
+
+/* ---------------------------------- UTILS --------------------------------- */
+.container {
+    max-width: 1000px;
+    width: 100%;
+    margin: auto;
+}
+
+.btn {
+    color: white;
+    background: var(--cyan);
+    padding: 8px 25px;
+    border-radius: 25px;
+    font-size: 1rem;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   NAVBAR                                   */
+/* -------------------------------------------------------------------------- */
+
+nav {
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo img {
+    width: 100%;
+}
+
+nav .hamburger {
+    padding: 5px;
+    border: none;
+    outline: none;
+    background: none;
+    display: none;
+}
+
+nav .navbar {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 50px;
+}
+
+nav .navbar a {
+    font-size: 1rem;
+}
+
+nav .navbar .navlist {
+    display: flex;
+}
+
+nav .navbar .navlist li {
+    margin-right: 20px;
+}
+
+nav .navbar .navlist li a {
+    color: var(--grayish-violet);
+}
+
+nav .navbar .login {
+    display: flex;
+    align-items: center;
+}
+
+nav .navbar .login li:first-child a {
+    color: var(--grayish-violet);
+    margin-right: 30px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                    HERO                                    */
+/* -------------------------------------------------------------------------- */
+.hero {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.hero .hero-content {
+    width: 70%;
+}
+
+.hero .hero-content h1 {
+    font-size: 4rem;
+    line-height: 1;
+    color: black;
+}
+
+.hero .hero-content p {
+    margin-bottom: 40px;
+}
+
+/* ------------------------------ */
+
+.hero .illustration {
+    position: relative;
+    left: 200px;
+}
+
+.hero .illustration img {
+    width: 120%;
+}
