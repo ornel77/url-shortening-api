@@ -32,6 +32,12 @@ body {
     color: black;
     font-weight: lighter;
   }
+
+  button {
+      outline: none;
+      border: 0;
+      background: none;
+  }
   
   img {
     display: block;
@@ -52,6 +58,10 @@ body {
     padding: 8px 25px;
     border-radius: 25px;
     font-size: 1rem;
+}
+
+.btn:hover {
+    opacity: 0.8;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -145,4 +155,104 @@ nav .navbar .login li:first-child a {
 
 .hero .illustration img {
     width: 120%;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  INPUT URL                                 */
+/* -------------------------------------------------------------------------- */
+.input-url {
+    margin-top: 60px;
+}
+
+.input-url .form-content {
+    background: url('../src/images/bg-shorten-desktop.svg') no-repeat center center/contain;
+    background-color: var(--dark-violet);
+    height: 110px;
+    border-radius: 10px;
+    position: relative;
+}
+.input-url form {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.input-url form label {
+    display: none;
+}
+
+.input-url form input {
+    width: 70%;
+    padding: 15px 20px;
+    margin-right: 20px;
+    border-radius: 8px;
+    border: none;
+}
+
+.input-url form input::placeholder {
+    font-size: 1rem;
+    color: var(--grayish-violet);
+}
+
+.input-url form .shorten {
+    width: 15%;
+    padding: 12.5px 20px;
+    border-radius: 8px;
+    background-color: var(--cyan);
+    color: white;
+    font-size: 1rem;
+}
+
+.input-url form .shorten:hover {
+    opacity: 0.8;
+}
+
+/* ------------------------------- CHECK ERROR ------------------------------- */
+
+.input-url .form-content .err-msg {
+    position: absolute;
+    color: var(--red);
+    top: 72%;
+    left: 6.5%;
+    font-size: 0.85rem;
+    font-style: italic;
+    display: none;
+}
+
+/* ------------------------------ */
+.input-url .result-list {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.input-url .result-list .result-item {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 15px 30px;
+    display: flex;
+    /* justify-content: space-between; */
+    flex: 1;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.input-url .result-list .result-item .origin {
+    color: black;
+    flex: 2;
+}
+
+.input-url .result-list .result-item .result {
+    color: var(--cyan);
+    margin-right: 20px;
+}
+
+.input-url .result-list .result-item .copy {
+    color: white;
+    background: var(--cyan);
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-size: 0.9rem;
 }
