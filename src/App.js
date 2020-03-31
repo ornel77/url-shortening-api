@@ -5,6 +5,7 @@ import './App.css';
 import Navbar from './Components/Navbar'
 import Hero from './Components/Hero'
 import InputURL from './Components/InputURL'
+import Statistic from './Components/Statistic'
 
 
 const App = props => {
@@ -12,7 +13,11 @@ const App = props => {
     <div className="mobile-box">
       <Navbar/>
       <Hero/>
-      <InputURL/>
+      <div className="sub-container">
+        <InputURL/>
+        <Statistic/>
+      </div>
+      
     </div>
   )
 }

@@ -44,12 +44,21 @@ body {
     width: 100%;
   }
 
+  h1,h2,h3
+ {
+     color: black;
+ }
 
 /* ---------------------------------- UTILS --------------------------------- */
 .container {
     max-width: 1000px;
     width: 100%;
     margin: auto;
+}
+
+.sub-container {
+    background-color: rgba(214, 214, 214, 0.548);
+    padding-bottom: 60px;
 }
 
 .btn {
@@ -150,7 +159,7 @@ nav .navbar .login li:first-child a {
 
 .hero .illustration {
     position: relative;
-    left: 200px;
+    left: 230px;
 }
 
 .hero .illustration img {
@@ -161,7 +170,9 @@ nav .navbar .login li:first-child a {
 /*                                  INPUT URL                                 */
 /* -------------------------------------------------------------------------- */
 .input-url {
-    margin-top: 60px;
+    margin-top: 200px;
+    position: relative;
+    top: -50px;
 }
 
 .input-url .form-content {
@@ -229,7 +240,6 @@ nav .navbar .login li:first-child a {
 
 .input-url .result-list .result-item {
     background-color: white;
-    border: 1px solid black;
     border-radius: 5px;
     padding: 15px 30px;
     display: flex;
@@ -255,4 +265,74 @@ nav .navbar .login li:first-child a {
     padding: 10px 30px;
     border-radius: 5px;
     font-size: 0.9rem;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  STATISTIC                                 */
+/* -------------------------------------------------------------------------- */
+.statistic {
+    margin-top: 50px;
+}
+
+.statistic header {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+.statistic header p {
+    font-size: 1rem;
+    line-height: 1.7;
+    margin: 20px 0;
+}
+
+/* ------------------------------ */
+.statistic .stat-grid {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    padding-bottom: 80px;
+    position: relative;
+}
+
+.statistic .stat-grid::before {
+    content: "";
+    background-color: var(--cyan);
+    position: absolute;
+    height: 8px;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50px);
+    z-index: -5;
+}
+
+.statistic .stat-grid img {
+    width: 25%;
+    background-color: var(--dark-violet);
+    padding: 15px;
+    border-radius: 50%;
+    position: relative;
+    top: -30px;
+}
+
+.statistic .stat-grid .stat-item {
+    background-color: white;
+    padding: 0 40px 0px 40px;
+    height: 100%;
+    /* width: 350px; */
+}
+
+.statistic .stat-grid .stat-item p {
+    font-size: 0.85rem;
+    margin-top: 15px;
+    line-height: 1.6;
+}
+
+.statistic .stat-grid .stat-item:nth-child(2) {
+    margin-top: 30px;
+}
+
+.statistic .stat-grid .stat-item:nth-child(3) {
+    margin-top: 60px;
 }

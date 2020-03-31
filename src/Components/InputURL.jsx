@@ -15,7 +15,7 @@ class InputURL extends Component {
                     </div>
                     <ul className="result-list">
                         <li className="result-item">
-                            <span className="origin">htpp://twitter.com</span>
+                            <span className="origin">htpp://twittedgfgfhfghfghfghr.com</span>
                             <span className="result">http://shorthghfghffghfgh</span>
                             <button className="copy">Copy</button>
                         </li>
