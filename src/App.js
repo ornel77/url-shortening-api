@@ -6,6 +6,8 @@ import Navbar from './Components/Navbar'
 import Hero from './Components/Hero'
 import InputURL from './Components/InputURL'
 import Statistic from './Components/Statistic'
+import Starter from './Components/Starter'
+import Footer from './Components/Footer'
 
 
 const App = props => {
@@ -17,7 +19,8 @@ const App = props => {
         <InputURL/>
         <Statistic/>
       </div>
-      
+      <Starter/>
+      <Footer/>
     </div>
   )
 }

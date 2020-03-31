@@ -6,7 +6,6 @@ import custom from '../images/icon-fully-customizable.svg'
 
 const Statistic = props => {
     return (
-
         <section className="statistic">
             <div className="container">
                 <header className="heading">
