@@ -74,6 +74,10 @@ body {
     opacity: 0.8;
 }
 
+.mobile-box {
+    overflow-x: hidden;
+}
+
 /* -------------------------------------------------------------------------- */
 /*                                   NAVBAR                                   */
 /* -------------------------------------------------------------------------- */
@@ -259,6 +263,9 @@ nav .navbar .login li:first-child a {
 .input-url .result-list .result-item .origin {
     color: black;
     flex: 2;
+    /* text-overflow: ellipsis; */
+    /* white-space: nowrap; */
+    overflow: auto;
 }
 
 .input-url .result-list .result-item .result {
@@ -381,6 +388,12 @@ footer a {
 footer .footer-flex {
     display: flex;
     justify-content: space-between;
+}
+
+footer .footer-flex svg {
+    fill: white;
+    background: white;
+
 }
 
 footer .footer-flex .socials a {
@@ -608,9 +621,7 @@ footer .footer-flex a:hover {
         max-width: 300px;
     }
 
-    .mobile-box {
-        overflow-x: hidden;
-    }
+    
 }
 
 

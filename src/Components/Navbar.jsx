@@ -4,16 +4,10 @@ import logo from '../images/logo.svg'
 
 class Navbar extends Component {
     handleClick() {
-        const hamburger = document.querySelector('.hamburger')
-        hamburger.addEventListener('click', () => {
-            document.body.classList.toggle('show-nav')
-            console.log('hello');
-        })
+        document.body.classList.toggle('show-nav')
     }
 
     render() {
-
-
         return (
             <div className="container">
                 <nav>
