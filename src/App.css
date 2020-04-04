@@ -178,22 +178,22 @@ nav .navbar .login li:first-child a {
 }
 
 /* -------------------------------------------------------------------------- */
-/*                                  INPUT URL                                 */
+/*                                  SEARCH                                */
 /* -------------------------------------------------------------------------- */
-.input-url {
+.search {
     margin-top: 200px;
     position: relative;
     top: -50px;
 }
 
-.input-url .form-content {
+.search .form-content {
     background: url('../src/images/bg-shorten-desktop.svg') no-repeat center center/cover;
     background-color: var(--dark-violet);
     padding: 40px 30px;
     border-radius: 10px;
     position: relative;
 }
-.input-url form {
+.search form {
     height: 100%;
     display: flex;
     align-items: center;
@@ -201,11 +201,11 @@ nav .navbar .login li:first-child a {
     
 }
 
-.input-url form label {
+.search form label {
     display: none;
 }
 
-.input-url form input {
+.search form input {
     width: 70%;
     padding: 15px 20px;
     margin-right: 20px;
@@ -213,12 +213,12 @@ nav .navbar .login li:first-child a {
     border: none;
 }
 
-.input-url form input::placeholder {
+.search form input::placeholder {
     font-size: 1rem;
     color: var(--grayish-violet);
 }
 
-.input-url form .shorten {
+.search form .shorten {
     width: 15%;
     padding: 12.5px 20px;
     border-radius: 8px;
@@ -227,13 +227,13 @@ nav .navbar .login li:first-child a {
     font-size: 1rem;
 }
 
-.input-url form .shorten:hover {
+.search form .shorten:hover {
     opacity: 0.8;
 }
 
 /* ------------------------------- CHECK ERROR ------------------------------- */
 
-.input-url .form-content .err-msg {
+.search .form-content .err-msg {
     position: absolute;
     color: var(--red);
     top: 72%;
@@ -244,12 +244,12 @@ nav .navbar .login li:first-child a {
 }
 
 /* ------------------------------ */
-.input-url .result-list {
+.search .result-list {
     margin-top: 20px;
     width: 100%;
 }
 
-.input-url .result-list .result-item {
+.search .result-list .result-item {
     background-color: white;
     border-radius: 5px;
     padding: 15px 30px;
@@ -260,7 +260,7 @@ nav .navbar .login li:first-child a {
     margin-bottom: 10px;
 }
 
-.input-url .result-list .result-item .origin {
+.search .result-list .result-item .origin {
     color: black;
     flex: 2;
     /* text-overflow: ellipsis; */
@@ -268,12 +268,12 @@ nav .navbar .login li:first-child a {
     overflow: auto;
 }
 
-.input-url .result-list .result-item .result {
+.search .result-list .result-item .result {
     color: var(--cyan);
     margin-right: 20px;
 }
 
-.input-url .result-list .result-item .copy {
+.search .result-list .result-item .copy {
     color: white;
     background: var(--cyan);
     padding: 10px 30px;
@@ -444,40 +444,40 @@ footer .footer-flex a:hover {
     }
 
     /* ------------------------------ */
-    .input-url {
+    .search {
         top: -90px;
     }
 
-    .input-url form {
+    .search form {
         flex-direction: column;
     }
 
-    .input-url form input, .input-url form .shorten {
+    .search form input, .search form .shorten {
         width: 100%;
     }
 
-    .input-url form input {
+    .search form input {
         margin-right: 0;
         margin-bottom: 30px;
     }
 
-    .input-url .form-content .err-msg {
+    .search .form-content .err-msg {
         top: 44%;
     }
 
-    .input-url .result-list .result-item {
+    .search .result-list .result-item {
         flex-direction: column;
         align-items: flex-start;
     }
 
-    .input-url .result-list .result-item .origin {
+    .search .result-list .result-item .origin {
         margin-bottom: 10px;
         padding: 10px 0;
         width: 100%;
         border-bottom: 1px solid var(--gray);
     }
 
-    .input-url .result-list .result-item .result {
+    .search .result-list .result-item .result {
         margin-bottom: 10px;
     }
 
